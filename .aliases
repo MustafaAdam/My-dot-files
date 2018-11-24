@@ -1,0 +1,49 @@
+# My aliases **************************************************************************************************************************
+
+alias ls='ls --color=auto --group-directories-first'
+alias shutdown='sudo shutdown now'
+alias reboot='sudo reboot'
+#alias man='viman'
+alias gcc='gcc -Wall -Werror -pedantic -std=c11'
+alias g++='g++ -Wall -Werror -std=c++1y'
+alias clang++='clang++ -std=c++11 -Werror -pedantic'
+alias valgrind='valgrind --tool=memcheck --leak-check=full '
+
+alias install='sudo apt-get install'
+alias update='sudo apt-get update'
+alias upgrade='sudo apt-get upgrade'
+alias autoremove='sudo apt-get autoremove'
+alias search='sudo apt-cache search'
+alias remove='sudo apt-get remove'
+alias purge='sudo apt-get purge'
+alias add='sudo add-apt-repository'
+alias dist-upgrade='sudo apt-get dist-upgrade'
+alias reinstall='sudo apt-get reinstall'
+alias check='sudo apt-get check'
+alias clean='sudo apt-get clean'
+alias autoclean='sudo apt-get autoclean'
+alias all='update&&upgrade&&dist-upgrade&&autoremove&&clean&&autoclean'
+
+#alias tmux='tmux -2'
+alias tmux='tmux -2 new-session \; split-window -h \; split-window -v \; attach'
+alias cls='printf "\033c"'
+alias p='python3 -B'
+alias i='ipython'
+alias ic='i qtconsole --style monokai'
+#alias vim='vim -Xv'
+alias pa="particle"
+
+alias youtube-dl='youtube-dl --prefer-ffmpeg'
+alias du='du -h'
+alias df='df -h'
+alias free='free -h'
+alias uptime='uptime -p'
+
+alias gits='git status'
+alias gitg='git log --graph --oneline --decorate --all'
+alias gitc='git commit -m '
+alias gitp='git push'
+
+
+alias scan="sudo iwlist wlan0 scan"
+
